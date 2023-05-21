@@ -20,10 +20,6 @@ export const Header = styled.header`
     color: #fff;
     transition: border-radius 0.2s ease, background 0.2s ease, color 0.2s ease,
       box-shadow 0.2s ease;
-    & svg {
-      display: none;
-      transition: display0.2s ease;
-    }
   }
   & a.active {
     padding: 5px;

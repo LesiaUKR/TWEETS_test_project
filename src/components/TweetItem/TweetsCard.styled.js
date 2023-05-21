@@ -54,7 +54,7 @@ export const InfoWrapper = styled.div`
         width: 380px;
         z-index: 100;
         position: absolute;
-        width: 380px;
+        max-width: 380px;
         height: 8px;
         left: 0px;
         top: 214px;
@@ -103,11 +103,11 @@ export const ButtonFollow = styled.button`
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
     border-radius: 10.3108px;
     border: none;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
+    min-width: 196px;
     text-transform: uppercase;
     color: #373737;
  

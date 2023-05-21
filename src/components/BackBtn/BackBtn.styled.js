@@ -7,14 +7,15 @@ export const BackLink = styled(Link)`
   gap: 4px;
   align-items: center;
   padding: 8px 8px;
+  margin-left:10px;
   text-decoration: none;
   color: #5736A3;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   :hover {
     color: #5736A3;
       font-weight: 700;
-    transform: scale(1.3);
+    transform: scale(1.2);
     cursor: pointer;
   }
 `;

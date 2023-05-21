@@ -6,7 +6,7 @@ export const Loader = () => {
   return (
     <LoaderBox>
       <BeatLoader
-        color="red"
+        color="#5736A3"
         aria-label="Loading Spinner"
         visible={'true'}
         loading={'true'}

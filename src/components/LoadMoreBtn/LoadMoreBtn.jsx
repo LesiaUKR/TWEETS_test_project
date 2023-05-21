@@ -5,7 +5,7 @@ export function LoadMoreBtn({ onClick }) {
   return (
     <BtnWrapper>
       <LoadMore type="button" onClick={onClick}>
-        Load more
+        LOAD MORE
       </LoadMore>
     </BtnWrapper>
   );

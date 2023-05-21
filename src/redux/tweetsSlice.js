@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const tweetsSlice = createSlice({
-  name: 'tweetsApi',
+  name: 'tweets',
   initialState: {
     filter: '',
   },
@@ -12,4 +12,5 @@ export const tweetsSlice = createSlice({
   },
 });
 
-export const { changeFilter } = tweetsSlice.actions;
+export const selectFilter = state => state.tweets.filter;
+export const { changeFilter} = tweetsSlice.actions;
