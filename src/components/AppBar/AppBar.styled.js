@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   position: sticky;
-  z-index: 5;
+  z-index: 1000;
   top: -1px;
   padding: 30px 30px;
   display: flex;
@@ -27,7 +27,7 @@ export const Header = styled.header`
   }
   & a.active {
     padding: 5px;
-    color: #373737;
+    color: #5736A3;
     border-radius: 20px;
     background: rgb(227, 227, 227);
     box-shadow: 0px 5px 10px rgba(0, 1, 0, 0.1);
