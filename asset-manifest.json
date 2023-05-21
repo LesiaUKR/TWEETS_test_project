@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TWEETS_test_project/static/css/main.6db3b384.css",
-    "main.js": "/TWEETS_test_project/static/js/main.985437b2.js",
+    "main.js": "/TWEETS_test_project/static/js/main.506c606f.js",
     "static/media/Tweet_Logo.svg": "/TWEETS_test_project/static/media/Tweet_Logo.23dcbc3cc8ccc9682f24b4acffb5efb2.svg",
     "static/media/Logo_GoIt.svg": "/TWEETS_test_project/static/media/Logo_GoIt.e917114d7945c04c85a8946a331d28b6.svg",
     "index.html": "/TWEETS_test_project/index.html",
     "main.6db3b384.css.map": "/TWEETS_test_project/static/css/main.6db3b384.css.map",
-    "main.985437b2.js.map": "/TWEETS_test_project/static/js/main.985437b2.js.map"
+    "main.506c606f.js.map": "/TWEETS_test_project/static/js/main.506c606f.js.map"
   },
   "entrypoints": [
     "static/css/main.6db3b384.css",
-    "static/js/main.985437b2.js"
+    "static/js/main.506c606f.js"
   ]
 }
