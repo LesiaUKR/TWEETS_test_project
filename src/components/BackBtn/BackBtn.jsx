@@ -1,12 +1,11 @@
 import React, { useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
-import {BackLink } from './BackBtn.styled';
+import { BackLink } from './BackBtn.styled';
 
-
-export const BackBtn=()=> {
+export const BackBtn = () => {
   const location = useLocation();
-    const backLinkRef = useRef(location.state?.from ?? '/');
+  const backLinkRef = useRef(location.state?.from ?? '/');
   return (
     <div>
       <BackLink to={backLinkRef.current} type="button">
@@ -15,4 +14,4 @@ export const BackBtn=()=> {
       </BackLink>
     </div>
   );
-}
+};

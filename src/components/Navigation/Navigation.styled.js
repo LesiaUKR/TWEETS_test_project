@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const NavContainer = styled.nav`
   margin-left: auto;
@@ -15,7 +15,7 @@ export const Link = styled(NavLink)`
   align-items: center;
   gap: 10px;
   font-weight: 900;
-  text-decoration:none;
+  text-decoration: none;
   &:hover {
     color: rgb(227, 227, 227);
     background-color: #5736a3;

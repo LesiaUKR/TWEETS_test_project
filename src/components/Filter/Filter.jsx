@@ -5,12 +5,11 @@ import { ContainerFilters, FiltersBtn } from './Filter.styled';
 
 export const Filter = () => {
   const dispatch = useDispatch();
- const filter = useSelector(selectFilter);
- 
- const handleFilterChange = filter => {
-   dispatch(changeFilter(filter));
- };
+  const filter = useSelector(selectFilter);
 
+  const handleFilterChange = filter => {
+    dispatch(changeFilter(filter));
+  };
 
   return (
     <ContainerFilters>

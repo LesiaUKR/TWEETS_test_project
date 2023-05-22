@@ -4,16 +4,15 @@ import AppBar from '../AppBar/AppBar';
 import { Main } from './SharedLayout.styled';
 import { Loader } from 'components/Loader/Loader';
 
-export  const SharedLayout = () => {
+export const SharedLayout = () => {
   return (
     <>
       <AppBar />
       <Main>
-        <Suspense fallback={<Loader/>}>
+        <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>
       </Main>
     </>
   );
 };
-

@@ -1,5 +1,4 @@
-
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Main = styled.main`
   display: flex;
@@ -16,9 +15,9 @@ export const Container = styled.div`
 `;
 
 export const TweetsContainer = styled.div`
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
   gap: 10px;
 `;

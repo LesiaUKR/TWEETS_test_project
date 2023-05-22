@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const LoadMore = styled.button`
   padding: 8px 16px;
   border-radius: 5px;
-  background-color: #EBD8FF;
+  background-color: #ebd8ff;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   display: inline-block;
@@ -12,18 +12,16 @@ export const LoadMore = styled.button`
   border: 0;
   text-decoration: none;
   cursor: pointer;
-  font-family: inherit;
   font-weight: 600;
-font-size: 18px;
-line-height: 22px;
+  font-size: 18px;
+  line-height: 22px;
   font-style: normal;
   min-width: 196px;
-  box-shadow: 2px 2px 6px 2px rgba(69, 33, 52, 0.8),
-    2px 2px 6px 2px rgba(69, 33, 52, 0.8), 2px 2px 6px 2px rgba(69, 33, 52, 0.8);
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   &:hover,
   &:focus {
-    background-color: #5736A3;
-      color: #fff;
+    background-color: #5736a3;
+    color: #fff;
   }
   margin: 0 auto;
 `;

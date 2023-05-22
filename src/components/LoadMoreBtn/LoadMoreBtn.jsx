@@ -12,5 +12,5 @@ export function LoadMoreBtn({ onClick }) {
 }
 
 LoadMoreBtn.propTypes = {
-  onClick:PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
 };

@@ -1,15 +1,19 @@
-import React, {useEffect, useState } from 'react';
-// import PropTypes from 'prop-types';
-import { Avatar, ButtonFollow, ButtonText, Counts, InfoBox, InfoWrapper } from './TweetsCard.styled';
+import React, { useEffect, useState } from 'react';
+import {
+  Avatar,
+  ButtonFollow,
+  ButtonText,
+  Counts,
+  InfoBox,
+  InfoWrapper,
+} from './TweetsCard.styled';
 import { useUpdateFollowersMutation } from 'services/tweetsApi';
 
-
-export const TweetsCard = ({ id, avatar, tweets, followers, isFollowing }) => {
-const [updatedFollowers, setUpdatedFollowers] = useState(100500);
+export const TweetsCard = ({ id, avatar, tweets, isFollowing }) => {
+  const [updatedFollowers, setUpdatedFollowers] = useState(100500);
   const [isFollow, setIsFollow] = useState(isFollowing);
   const [updateFollowers] = useUpdateFollowersMutation();
 
-  // Отримуємо збережені значення з local storage при першому рендері
   useEffect(() => {
     const savedFollowers = localStorage.getItem(`followers_${id}`);
     const savedIsFollow = localStorage.getItem(`isFollow_${id}`);
@@ -27,12 +31,11 @@ const [updatedFollowers, setUpdatedFollowers] = useState(100500);
     }
   }, [id, updatedFollowers, isFollow]);
 
-
   const handleFollow = async () => {
-    const increment = isFollow ? -1 : 1; // Зменшуємо на 1, якщо вже фолловимо, або збільшуємо на 1, якщо ще не фолловимо
+    const increment = isFollow ? -1 : 1;
     await updateFollowers({ userId: id, increment });
-    setUpdatedFollowers(prevFollowers => prevFollowers + increment); // Оновлюємо локальний стан updatedFollowers
-    setIsFollow(!isFollow); // Змінюємо стан isFollow
+    setUpdatedFollowers(prevFollowers => prevFollowers + increment);
+    setIsFollow(!isFollow);
   };
 
   return (
@@ -50,8 +53,3 @@ const [updatedFollowers, setUpdatedFollowers] = useState(100500);
     </div>
   );
 };
-
-// TweetItem.propTypes = {
-// tweet: PropTypes.number,
-//   followers: PropTypes.number,
-// };
