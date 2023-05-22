@@ -12,7 +12,7 @@ export const tweetsApi = createApi({
       query: (page = 1) => `/tweets?page=${page}&limit=3`,
       providesTags: ['Tweet'],
     }),
- updateFollowers: builder.mutation({
+    updateFollowers: builder.mutation({
       query: (userId, increment) => ({
         url: `/users/${userId}`,
         method: 'PATCH',
@@ -23,7 +23,4 @@ export const tweetsApi = createApi({
   }),
 });
 
-export const {
-  useGetTweetsQuery,
-  useUpdateFollowersMutation,
-} = tweetsApi;
+export const { useGetTweetsQuery, useUpdateFollowersMutation } = tweetsApi;

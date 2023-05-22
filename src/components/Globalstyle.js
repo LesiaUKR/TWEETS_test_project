@@ -41,5 +41,3 @@ code {
    height: auto;
  }
 `;
-
-

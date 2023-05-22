@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { statusFilters } from '../../redux/constants';
-import { changeFilter, selectFilter } from '../../redux/tweetsSlice';
+import { changeFilter } from '../../redux/tweetsSlice';
 import { ContainerFilters, FiltersBtn } from './Filter.styled';
+import { selectFilter } from 'redux/selectors';
 
 export const Filter = () => {
   const dispatch = useDispatch();

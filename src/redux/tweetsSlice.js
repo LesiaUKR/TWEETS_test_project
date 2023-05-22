@@ -12,5 +12,4 @@ export const tweetsSlice = createSlice({
   },
 });
 
-export const selectFilter = state => state.tweets.filter;
 export const { changeFilter} = tweetsSlice.actions;

@@ -9,7 +9,7 @@ export const Main = styled.main`
 `;
 
 export const Container = styled.div`
-  max-width: 1300px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 `;
@@ -19,5 +19,4 @@ export const TweetsContainer = styled.div`
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 40px;
-  gap: 10px;
 `;
